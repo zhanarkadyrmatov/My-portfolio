@@ -1,0 +1,592 @@
+:root {
+  --accent: #174180;
+  --accent-light: #3764a3;
+  --pure-white: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: var(--accent);
+  z-index: 2;
+}
+
+.header-inner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: var(--pure-white);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: var(--accent);
+  width: 100%;
+}
+
+.menu li {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu-toggle {
+  width: 60px;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: var(--pure-white);
+  color: var(--pure-white);
+}
+
+.menu-show {
+  display: flex;
+}
+.intro {
+  position: relative;
+  background-image: url(/img/thumb-1920-1108171.png);
+  background-position: center center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--pure-white);
+  padding: 100px 0;
+  z-index: 1;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 1, 90, 0.6);
+  z-index: -1;
+}
+
+.intro-text {
+  font-size: 20px;
+  color: var(--pure-white);
+  text-align: center;
+  width: 80%;
+  padding-left: 40px;
+}
+
+.intro p {
+  margin: 0px 0px 80px;
+}
+
+.intro a {
+  padding: 20px 60px;
+  background-color: var(--accent);
+  color: var(--pure-white);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.intro a:hover {
+  background-color: var(--accent-light);
+}
+
+.intro-2 {
+  padding: 60px 0;
+  background-color: var(--accent);
+  color: var(--pure-white);
+}
+
+.intro-logo {
+  width: 50%;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.intro-about {
+  text-align: center;
+  padding: 10px 0;
+  color: var(--pure-white);
+}
+
+.intro-contakc {
+  padding-left: 10px;
+}
+
+.intro-contakc li {
+  list-style: none;
+}
+
+.section-title {
+  text-align: center;
+  margin: 60px 0;
+  font-size: 30px;
+}
+
+.skills {
+  padding: 60px 0;
+}
+
+.box {
+  margin: 30px 0;
+  border: 5px solid var(--accent);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 180px;
+}
+
+.box h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio {
+  padding: 60px 0;
+  background-color: var(--accent);
+  color: var(--pure-white);
+}
+
+.portfolio-1 {
+  margin: 50px 0;
+  border: 5px solid var(--pure-white);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.portfolio-1 img {
+  width: 100%;
+  height: 250px;
+}
+
+.portfolio-1 a {
+  padding: 10px 30px;
+  background-color: var(--pure-white);
+  border-radius: 10px;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.portfolio-1 a:hover {
+  background-color: var(--accent-light);
+  color: var(--pure-white);
+}
+
+.languages {
+  padding: 60px 0;
+}
+
+.languages li {
+  padding: 15px;
+  list-style: none;
+}
+
+.languages .English {
+  position: relative;
+  padding-left: 50px;
+}
+
+.languages .English::before {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  content: "";
+  width: 32px;
+  height: 30px;
+  background-image: url("/img/united-states-of-america.png");
+}
+
+.languages .Russian {
+  position: relative;
+  padding-left: 50px;
+}
+
+.languages .Russian::before {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  content: "";
+  width: 32px;
+  height: 30px;
+  background-image: url("/img/russia.png");
+}
+
+.languages .Kyrgyz {
+  position: relative;
+  padding-left: 50px;
+}
+
+.languages .Kyrgyz::before {
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  content: "";
+  width: 32px;
+  height: 30px;
+  background-image: url("/img/kyrgyzstan.png");
+}
+
+.code {
+  padding: 60px 0;
+  background-color: var(--accent);
+  color: var(--pure-white);
+  font-size: 16px;
+}
+
+.code p {
+  font-style: italic;
+  text-align: center;
+}
+
+.code pre {
+  margin-right: 100px;
+}
+
+.contacts {
+  padding: 60px 0;
+}
+
+.contacts-text {
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.contacts-text-2 {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.contacts-submit {
+  background-color: var(--accent);
+  color: var(--pure-white);
+  border-radius: 10px;
+  width: 50%;
+  height: 50px;
+}
+
+.contacts-2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.number {
+  position: relative;
+  display: inline-block;
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 15px 68px;
+  color: var(--pure-white);
+  margin: 0;
+}
+
+.number::before {
+  position: absolute;
+  background-image: url(/img/telephone.png);
+  bottom: 10px;
+  right: 150px;
+  content: "";
+  width: 32px;
+  height: 32px;
+}
+
+.number:hover {
+  background-color: var(--accent-light);
+}
+
+.email {
+  position: relative;
+  display: inline-block;
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 15px 79px;
+  color: var(--pure-white);
+  margin: 0;
+}
+
+.email::before {
+  position: absolute;
+  background-image: url(/img/gmail.png);
+  bottom: 10px;
+  right: 150px;
+  content: "";
+  width: 32px;
+  height: 32px;
+}
+
+.email:hover {
+  background-color: var(--accent-light);
+}
+
+.telegram {
+  position: relative;
+  display: inline-block;
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 15px 63px;
+  color: var(--pure-white);
+  margin: 0;
+}
+
+.telegram::before {
+  position: absolute;
+  background-image: url(/img/telegram.png);
+  bottom: 10px;
+  right: 160px;
+  content: "";
+  width: 32px;
+  height: 32px;
+}
+
+.telegram:hover {
+  background-color: var(--accent-light);
+}
+
+.instagram {
+  position: relative;
+  display: inline-block;
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 15px 60px;
+  color: var(--pure-white);
+  margin: 0;
+}
+
+.instagram::before {
+  position: absolute;
+  background-image: url(/img/instagram.png);
+  bottom: 10px;
+  right: 167px;
+  content: "";
+  width: 32px;
+  height: 32px;
+}
+
+.instagram:hover {
+  background-color: var(--accent-light);
+}
+
+.whatsapp {
+  position: relative;
+  display: inline-block;
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 15px 60px;
+  color: var(--pure-white);
+  margin: 0 0 60px;
+}
+
+.whatsapp::before {
+  position: absolute;
+  background-image: url(/img/whatsapp.png);
+  bottom: 10px;
+  right: 167px;
+  content: "";
+  width: 32px;
+  height: 32px;
+}
+
+.whatsapp:hover {
+  background-color: var(--accent-light);
+}
+
+.icon {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-image: url(/img/up-svgrepo-com.svg);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.footer {
+  padding: 10px 0;
+  text-align: center;
+  background-color: var(--accent);
+  color: var(--pure-white);
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--pure-white);
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 35px;
+  }
+
+  .intro-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+  }
+
+  .intro-logo {
+    width: 350px;
+  }
+
+  .skills-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .portfolio-0 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contacts-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contacts-2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-link {
+    font-size: 16px;
+    line-height: px;
+    padding: 16px 10px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+
+  .logo {
+    padding-right: 150px;
+  }
+
+  .menu-link:hover {
+    background-color: var(--accent-light);
+  }
+
+  .intro p {
+    margin: 50px 100px 80px;
+  }
+
+  .section-title {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 40px;
+  }
+
+  .intro-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    font-size: 20px;
+  }
+
+  .intro-logo {
+    width: 350px;
+  }
+
+  .skills-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  .portfolio-0 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .code {
+    font-size: 25px;
+  }
+
+  .contacts-1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .icon {
+    width: 55px;
+    height: 55px;
+  }
+}
