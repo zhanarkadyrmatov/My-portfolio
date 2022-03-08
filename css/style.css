@@ -20,9 +20,9 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 .container {
-  max-width: 1140px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
 .header {
@@ -84,9 +84,10 @@ body {
 .menu-show {
   display: flex;
 }
+
 .intro {
   position: relative;
-  background-image: url(/img/thumb-1920-1108171.png);
+  background-image: url(../img/thumb-1920-1108171.png);
   background-position: center center;
   object-fit: cover;
   background-size: cover;
@@ -111,7 +112,7 @@ body {
   font-size: 20px;
   color: var(--pure-white);
   text-align: center;
-  width: 80%;
+  width: 100%;
   padding-left: 40px;
 }
 
