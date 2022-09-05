@@ -1,0 +1,18 @@
+.footer {
+  margin-top: 30px;
+  padding: 10px 0;
+  text-align: center;
+  background-color: lighten($color: #000000, $amount: 80);
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+  }
+  .container {
+    width: 100%;
+  }
+}
